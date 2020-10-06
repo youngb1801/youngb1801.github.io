@@ -140,7 +140,7 @@ a:hover {
 @media screen and (max-width: 480px) {
      /* css for small device */
      /*                      */
-     div.top-ml {
+     img.top-ml {
        position: absolute;
        right: 10px;
        top: 40px;
@@ -150,7 +150,7 @@ a:hover {
 @media screen and (min-width: 600px) {
     /* css for large device */
     /*                      */
-    div.top-ml {
+    img.top-ml {
       position: absolute;
       right: 300px;
       top: 40px;
