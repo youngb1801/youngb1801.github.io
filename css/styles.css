@@ -93,12 +93,6 @@ a:hover {
   padding: 20px 0;
 }
 
-.top-ml {
-  position: absolute;
-  right: 300px;
-  top: 40px;
-}
-
 .code-img {
   width: 25%;
   float: left;
@@ -147,6 +141,27 @@ a:hover {
   max-width: 60%;
   margin: auto;
   line-height: 1.5;
+}
+
+@media screen and (min-width: 480px)
+    /* css for large device */
+    /*                      */
+    .top-ml {
+      position: absolute;
+      right: 300px;
+      top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+     /* css for small device */
+     /*                      */
+     .top-ml {
+       position: absolute;
+       right: 40px;
+       top: 40px;
+     }
 }
 
 .DataScienceContentBanner {
