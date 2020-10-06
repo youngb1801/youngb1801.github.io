@@ -137,24 +137,10 @@ a:hover {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 480px) {
-     /* css for small device */
-     /*                      */
-     img.top-ml {
-       position: absolute;
-       right: 10px;
-       top: 40px;
-     }
-}
-
-@media screen and (min-width: 600px) {
-    /* css for large device */
-    /*                      */
-    img.top-ml {
-      position: absolute;
-      right: 300px;
-      top: 40px;
-    }
+img.top-ml {
+  position: absolute;
+  right: 10%;
+  top: 40px;
 }
 
 .DataScienceContentBanner {
