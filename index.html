@@ -26,6 +26,7 @@
 
   <!-- Load d3-cloud -->
   <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
@@ -39,84 +40,69 @@
   </div>
 
   <div class="middle-container">
+
     <div class="profile">
       <img src="images/bret.png" alt="bret-profile-img">
-      <h2>Hello!</h2>
-      <p class="intro">I am a Data Scientist persuing my Masters Degree. I enjoy exploring data and learning what story it has to uncover.</p>
+      <section class="colored-section" id="project">
+      <p class="intro">I’m an aspiring Data Scientist with over 7 years of experience in variety of industries. I am a highly motivated individual devoted to solving problems and continued learning. I utilize a variety of analytical techniques to develop creative solutions to challenging problems and make intuitive decisions and effectively communicating to all audience types. I am experienced in Python, R, Data Cleaning, Data Visualization, and Machine Learning.
+      </p>
+      <p class="intro">I started my journey by obtaining my undergraduate degree in biochemistry from Northern Illinois University. After graduating, I began working in health, safety, and environmental for a worldwide engineering, procurement, and construction company where I collected data in relation to incidents, employee exposures and waste. The data was analyzed to identify trends which led to campaigns to enhance employee awareness and updated policies to protect workers as well as reduce project costs. I also aided in generating and presenting safety training and presented data trends in weekly project meetings.
+      </p>
+      <p class="intro">I then moved into the hospitality industry working for another worldwide company where I took a role as a scheduler ensuring employees were scheduled in accordance with labor laws and agreements. This role allowed me to analyze shift data and identify areas of improvement reducing expenditures. Seeing all the data that was available in this role, I decided to continue my education and started my master’s degree from Bellevue University in data science.
+      </p>
+      <p class="intro">When I am not working on projects or studying, I spend time with my family or tying flies for my next fly-fishing adventure.
+      </p>
+      </section>
     </div>
+
     <hr>
     <div class="skills">
       <h2>My Skills</h2>
 
-      <div id="my_dataviz"></div>
-      <script>
+      <div class="grid-container">
 
-        // List of words
-        var myWords = [{word: "Communication", size: "30"},
-                      {word: "Data Visualization", size: "20"},
-                      {word: "Data Preparation", size: "20"},
-                      {word: "Data Modeling", size: "25"},
-                      {word: "Predictive Analysis", size: "15"},
-                      {word: "Data Analysis", size: "50"},
-                      {word: "Presentation", size: "30"},
-                      {word: "Machine Learning", size: "20"},
-                      {word: "Programming", size: "60"},
-                      {word: "Python", size: "50"},
-                      {word: "R", size: "50"},
-                      {word: "Tableau", size: "30"},
-                      {word: "Power BI", size: "20"},
-                      {word: "Excel", size: "40"},
-                      {word: "SPSS", size: "30"},
-                      {word: "SAS", size: "20"},
-                      {word: "HTML", size: "20"},
-                      {word: "CSS", size: "20"},
-                      {word: "Visual Basic", size: "30"},
-                      {word: "JavaScript", size: "25"},]
+        <div class="para-text">
+          <i class="fab fa-python fa-3x"></i><span class="iconify" data-icon="carbon:logo-r-script" data-inline="false"></span><i class="fas fa-file-excel fa-3x"></i>
+          <h5>Languages: Python, R, Visual Basic</h5>
+          <p>I am most proficient with Python and most of my projects start here. I am also familiar with R and Visual Basic.</p>
+        </div>
 
-        // set the dimensions and margins of the graph
-        var margin = {top: 10, right: 10, bottom: 10, left: 10},
-          width = 450 - margin.left - margin.right,
-          height = 450 - margin.top - margin.bottom;
+        <div class="para-text">
+          <span class="iconify" data-icon="carbon:clean" data-inline="false"></span><span class="iconify" data-icon="simple-icons:pandas" data-inline="false"></span><span class="iconify" data-icon="file-icons:numpy" data-inline="false"></span>
+          <h5>Data Cleaning: Pandas, NumPy, Dplyr, Tidyr</h5>
+          <p>Most of my time during a data science project is spent cleaning and exploring data. I constantly use these to uncover patterns and test hypothesis through summary statistics.</p>
+        </div>
 
-        // append the svg object to the body of the page
-        var svg = d3.select("#my_dataviz").append("svg")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
-          .attr("class", "word_cloud")
-        .append("g")
-          .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");
+        <div class="para-text">
+          <i class="fas fa-chart-bar fa-3x"></i><span class="iconify" data-icon="carbon:qq-plot" data-inline="false"></span><span class="iconify" data-icon="entypo:line-graph" data-inline="false"></span>
+          <h5>Data Visualization: Tableau, Power BI, Matplotlib, Seaborn, Plotly, GGplot2</h5>
+          <p>Being able to visualize data is my favorite part of a project. I am experienced with Matplot lib and Ggplot2. I have also used Seaborn and Plotly in my projects depending on visualization needs.</p>
+        </div>
 
-        // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
-        // Wordcloud features that are different from one word to the other must be here
-        var layout = d3.layout.cloud()
-        .size([width, height])
-        .words(myWords.map(function(d) { return {text: d.word, size:d.size}; }))
-        .padding(8)        //space between words
-        .rotate(function() { return ~~(Math.random() * 2) * 90; })
-        .fontSize(function(d) { return d.size; })      // font size of words
-        .on("end", draw);
-        layout.start();
+        <div class="para-text">
+          <span class="iconify" data-icon="carbon:machine-learning-model" data-inline="false"></span><span class="iconify" data-icon="simple-icons:scikit-learn" data-inline="false"></span><span class="iconify" data-icon="cib:tensorflow" data-inline="false"></span>
+          <h5>Machine Learning: sklearn, Tensorflow</h5>
+          <p>I am most comfortable working with Scikit-learn for building machine learning models. I have used this for many projects and am familiar with many algorithms. When working with neural networks, TensorFlow is my preference.</p>
+        </div>
 
-        // This function takes the output of 'layout' above and draw the words
-        // Wordcloud features that are THE SAME from one word to the other can be here
-        function draw(words) {
-        svg
-          .append("g")
-            .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
-            .selectAll("text")
-              .data(words)
-            .enter().append("text")
-              .style("font-size", function(d) { return d.size; })
-              .style("fill", "#11999E")
-              .attr("text-anchor", "middle")
-              .style("font-family", "Impact")
-              .attr("transform", function(d) {
-                return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-              })
-              .text(function(d) { return d.text; });
-        }
-        </script>
+        <div class="para-text">
+          <span class="iconify" data-icon="dashicons:database" data-inline="false"></span><span class="iconify" data-icon="cib:mysql" data-inline="false"></span><span class="iconify" data-icon="cib:postgresql" data-inline="false"></span>
+          <h5>Data Bases: SQL, MySQL, PostgreSQL</h5>
+          <p>For databases, I am trained in SQL and PostgreSQL. I have also worked in MySQL in the past.</p>
+        </div>
+
+        <div class="para-text">
+          <span class="iconify" data-icon="fa-brands:git" data-inline="false"></span><i class="fab fa-github-square fa-3x"></i><span class="iconify" data-icon="bx:bx-git-merge" data-inline="false"></span>
+          <h5>Version Control: Git, GitHub</h5>
+          <p>Organization and version control are important in any project. I always build a project using Git or GitHub for this reason.</p>
+        </div>
+
+        <div class="para-text">
+          <span class="iconify" data-icon="carbon:logo-jupyter" data-inline="false"></span><span class="iconify" data-icon="cib:atom" data-inline="false"></span><span class="iconify" data-icon="file-icons:rstudio" data-inline="false"></span>
+          <h5>IDES: Jupyter, Atom, Pycharm, RStudio</h5>
+          <p>Utilizing an integrated development environment (IDE) is an important aspect to improve code maintaniability. I prefer to use JupyterLab or ATOM for my Pyton IDE and Rstudio for R. I have also used Pycharm for past projects.</p>
+        </div>
+
       </div>
     </div>
     <hr>
@@ -175,7 +161,7 @@
     <hr>
     <div class="contact-me">
       <h2>Get In Touch</h2>
-      <p class="contact-message">You can contact me by email, see my LinkedIn profile or my GitHub code below.</p>
+      <p class="contact-message">If you would like to get in touch, click below and I will try to respond as soon as possible.</p>
       <a class="btn" href="mailto:bayoung1801@gmail.com">CONTACT ME</a>
     </div>
   </div>

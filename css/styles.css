@@ -25,6 +25,11 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+h5 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
 p {
   line-height: 2;
 }
@@ -78,8 +83,8 @@ a:hover {
 }
 
 .intro {
-  width: 30%;
-  margin: auto;
+  width: 80%;
+  margin:  auto auto 40px;
 }
 
 .contact-message {
@@ -151,6 +156,24 @@ img.top-ml {
   width: 100%;
 }
 
-.word_cloud {
-  background-color: #E4F9F5;
+.contact-message {
+  color: #11999E;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+.fa-3x {
+  color: #11999E;
+  margin: auto 2%;
+}
+
+.iconify {
+  color: #11999E;
+  width: 50px;
+  height: 50px;
+  margin: auto 2%;
 }
