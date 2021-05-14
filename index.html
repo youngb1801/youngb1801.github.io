@@ -111,50 +111,102 @@
       <img class="a1450Banner" src="images/1450.jpg" alt="1450-img">
       <section class="colored-section" id="project">
 
-        <div id="project-carousel" class="carousel slide" data-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
+        <div class="grid-container2">
+
+            <div class="para-text">
+              <img class="proj-img" src="images/loan.jpg" alt="loan-img" width="200" height="200">
+              <h3 class="project-text">Loan Value Prediction</h3>
+              <h4>Model Evaluation</h4>
+              <em>Environment: R & Python</em>
+              <p class="proj-text">Various models were used to predict loan amount for online loan applications. The random forest model with 7 trees performed the best with the lowest mean squared error and highest r-squared values.</p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Loan_Prediction/README.md" target="_blank">Documentation</a>
+            </div>
+
+            <div class="para-text">
+              <img class="proj-img" src="images/bidirectional_LSTM.png" alt="airline-safety-img" width="200" height="200">
+              <h3 class="project-text">Condition Classification from Drug Review</h3>
+              <h4>Text Analysis & Neural Networks</h4>
+              <em>Environment: Python</em>
+              <p class="proj-text">Drug reviews from Drugs.com were converted into a vector representation and feed into a bidirectional long-shhort term memory recurrent neural network. The model accuracy was 60% compared to 26% for the baseline randomly predicting the highest occurring condition.</p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Review_Classification/README.md" target="_blank">Documentation</a>
+            </div>
+
+<!-- Placeholder for Final Project
+            <div class="para-text">
+              <img class="proj-img" src="images/flyingstatistics.jpg" alt="sales-img" width="200" height="200">
+              <h3 class="project-text">Sales Prediction </h3>
+              <h4>Time Series Analysis</h4>
+              <em>Environment: Python & Tableau</em>
+              <p class="proj-text"> </p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/________" target="_blank">Documentation</a>
+            </div>
+-->
+            <div class="para-text">
+              <img class="proj-img" src="images/flyingstatistics.jpg" alt="airline-safety-img" width="200" height="200">
               <h3 class="project-text">Airline Safety</h3>
-              <img src="images/flyingstatistics.jpg" alt="airline-safety-img" width="100" height="100">
-              <h4>Focus - Data Visualization</h4>
-              <p class="para-text">Airline and automobile fatality datasets were used to show that airline travel is still safer than automobiles despite an increase in unfortunate events. This project is still in progress. </p>
+              <h4>Data Visualization</h4>
               <em>Environment: Tableau</em>
+              <p class="proj-text">Airline and automobile fatality datasets were used to show that airline travel is still safer than automobiles despite an increase in unfortunate events. This project is still in progress. </p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Airline_Safety/README.md" target="_blank">Documentation</a>
             </div>
-            <div class="carousel-item container-fluid">
-              <h3 class="project-text">Loan Risk Assesment</h3>
-              <img src="images/loan.jpg" alt="loan-img" width="100" height="100">
-              <h4>Focus - Predictive Analytics</h4>
-              <p class="para-text">Loan applicants were assessed using multiple machine learning algorithms to determine the best alogrithm to represent new applicant's loan risk.</p>
-              <em>Environment: Python & R in Rmarkdown</em>
-            </div>
-            <div class="carousel-item container-fluid">
+
+            <div class="para-text">
+              <img class="proj-img" src="images/zoo_animals.jpg" alt="animal-img" width="200" height="200">
               <h3 class="project-text">Animal Classification</h3>
-              <img src="images/zoo_animals.jpg" alt="classification-tree-img" width="100" height="100">
-              <h4>Focus - Data Mining & Machine Learning</h4>
-              <p class="para-text">Characteristics of zoo animals were fed into a decision tree model and used to identify new species classes.</p>
-              <em>Environment: Python in Jupyter Notebook</em>
+              <h4>Data Exploration & Modeling</h4>
+              <em>Environment: Python</em>
+              <p class="proj-text">Traits of animals were used to create a decission tree used to classify the animal into mammal, bird, reptile, fish, invertibrate, bug or amphibian.</p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Animal_Classification/README.md" target="_blank">Documentation</a>
             </div>
-            <div class="carousel-item container-fluid">
-              <h3 class="project-text">Text Data Analysis</h3>
-              <img src="images/sentiment.jpg" alt="sentiment-img" width="100" height="100">
-              <h4>Focus - Parsing Text Data</h4>
-              <p class="para-text">Data in the form of text was loaded and formatted to be used for various tasks including sentiment analysis.</p>
-              <em>Environment: Python in Jupyter Notebook</em>
+
+            <div class="para-text">
+              <img class="proj-img" src="images/movie_rec.jpg" alt="movie-img" width="200" height="200">
+              <h3 class="project-text">Movie Recommender System</h3>
+              <h4>End to End Project</h4>
+              <em>Environment: Python</em>
+              <p class="proj-text">In the era of streaming services, having the ability to recommend movies thhe client may be highly interested in is vital. This project is designed to present the top 10 movies based on distance to the selected movie using a k-Nearest Neighbors model on multiple user ratings.</p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Movie_Recommender_System/README.md" target="_blank">Documentation</a>
             </div>
-            <div class="carousel-item container-fluid">
-              <h3 class="project-text">More Projects</h3>
-              <h4> </h4>
-              <p class="para-text">More projects can be found on my<a href="https://github.com/youngb1801"><i>GitHub</i></a>page</p>
-              <em>Environment: Python in Jupyter Notebook</em>
+
+            <div class="para-text">
+              <img class="proj-img" src="images/sentiment.jpg" alt="sentiment-img" width="200" height="200">
+              <h3 class="project-text">Sentiment Analysis</h3>
+              <h4>Data Exploration & Analysis</h4>
+              <em>Environment: Python</em>
+              <p class="proj-text">Product reviews of women's clothing were analyzed to determine if the review was positive or negative based on a list of predefined words. The final decision was made by summing the positive and negative values, which may have also ended with a neutral review classification.</p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Sentiment%20Analysis/README.md" target="_blank">Documentation</a>
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-          </a>
+
+            <div class="para-text">
+              <img class="proj-img" src="images/OpenWeatherMap_API.jpg" alt="OpenWeatherMap-API-img" width="200" height="100">
+              <img src="images/twitter_API.jpg" alt="Twitter-API-img" width="200" height="100">
+              <h3 class="project-text">API Usage</h3>
+              <h4>Data Collection & Cleaning</h4>
+              <em>Environment: Python</em>
+              <p class="proj-text">Application programming interfaces, API's, for OpenWeatherMap and Twitter were used to obtain data and used to build databases for future analysis. </p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Data_Collection_API/README.md" target="_blank">Documentation</a>
+            </div>
+
+            <div class="para-text">
+              <img class="proj-img" src="images/map.jpg" alt="salmon-map-img" width="200" height="200">
+              <h3 class="project-text">Salmon Catch Location Predictor</h3>
+              <h4>Data Modeling</h4>
+              <em>Environment: Python</em>
+              <p class="proj-text">Historical North Atlantic salmon catch data from the International Counsil for the Exploration of the Sea was analyzed to determine the optimal location to commercially fish for Atlantic salmon.</p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Salmon_Catch_Location/README.md" target="_blank">Documentation</a>
+            </div>
+
+            <div class="para-text">
+              <img class="proj-img" src="images/data_cleaning.jpg" alt="data-cleaning-img" width="200" height="200">
+              <h3 class="project-text">Data Wrangling</h3>
+              <h4>Data Cleaning</h4>
+              <em>Environment: Python</em>
+              <p class="proj-text">Data comes in many different formats and very rarely is ready to be used in a model without processing. This project performed cleaning and transformation to a dataset to prepare it for machine learning and additional analysis.</p>
+              <a class="btn" href="https://github.com/youngb1801/Portfolio/blob/main/Data_Cleaning/README.md" target="_blank">Documentation</a>
+            </div>
+
         </div>
+
 
       </section>
     </div>

@@ -25,6 +25,11 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+h4 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
 h5 {
   color: #11999E;
   font-family: 'Montserrat', sans-serif;
@@ -161,9 +166,15 @@ img.top-ml {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-gap: 1rem;
 }
 
 .fa-3x {
@@ -176,4 +187,16 @@ img.top-ml {
   width: 50px;
   height: 50px;
   margin: auto 2%;
+}
+
+.proj-text {
+  line-height: 1.5;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.proj-img {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
